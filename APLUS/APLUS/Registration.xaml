@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APLUS.Registration"
+             Title="Регистрация" BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="E-mail" TextColor="Black" Margin="60, 40, 60, 0"></Label>
+            <Frame Margin="60, 0" BorderColor="Black">
+                <Entry TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" Margin="-10,-19,-10,-19"/>
+            </Frame>
+            <Label Text="Логин" TextColor="Black" Margin="60, 40, 60, 0"></Label>
+            <Frame Margin="60, 0" BorderColor="Black">
+                <Entry TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" Margin="-10,-19,-10,-19"/>
+            </Frame>
+            <Label Text="Пароль" TextColor="Black" Margin="60, 40, 60, 0"></Label>
+            <Frame Margin="60, 0" BorderColor="Black">
+                <Entry TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" Margin="-10,-19,-10,-19"/>
+            </Frame>
+            <Label Text="Подтвердите пароль" TextColor="Black" Margin="60, 40, 60, 0"></Label>
+            <Frame Margin="60, 0" BorderColor="Black">
+                <Entry TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" Margin="-10,-19,-10,-19"/>
+            </Frame>
+            <Button Text="Зарегистрироваться" FontSize="10" Margin="55, 40, 55, 0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

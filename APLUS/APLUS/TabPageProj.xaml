@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="APLUS.TabPageProj"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:APLUS"
+    Title="{x:Static local:TabPageProj.NameTit}">
+    <ContentPage Title="О проекте" BackgroundColor="White">
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    Margin="20"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="ОПИСАНИЕ:"
+                    TextColor="Black" />
+                <Label
+                    Margin="2"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ultricies orci, in porta sem. Vestibulum in risus iaculis, porta orci at, bibendum velit. Nam volutpat pulvinar feugiat. Suspendisse imperdiet scelerisque porttitor. Integer mauris nibh, varius nec sem at, molestie cursus enim. Curabitur quis ipsum arcu. Ut ac accumsan dolor, sit amet molestie massa. In pharetra metus nec metus rutrum rhoncus. Quisque vestibulum dui dui, nec posuere nunc condimentum ut. Nunc accumsan sagittis dolor eu imperdiet."
+                    TextColor="Black" />
+                <Label
+                    Margin="2"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="Phasellus non purus et ante convallis volutpat. Curabitur fringilla, ligula quis consequat feugiat, nibh justo condimentum diam, sit amet tincidunt dui sapien ut ante. Integer pretium dui vitae magna interdum pellentesque. In ac ornare est. Donec congue volutpat nibh, sed pretium mi venenatis vel. Donec rutrum elementum lectus, eu posuere libero commodo id. Pellentesque molestie sollicitudin velit et sagittis."
+                    TextColor="Black" />
+                <Label
+                    Margin="2"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc cursus quam ac mauris cursus pharetra. Nam quis pretium lorem. Phasellus erat nibh, tempus eget arcu et, malesuada malesuada nibh. Praesent semper nulla vel ligula pharetra, et fringilla metus viverra. Morbi orci tortor, mattis eu arcu eu, tristique venenatis quam. Fusce facilisis vel est nec laoreet. In dictum felis nisl, ullamcorper pulvinar enim volutpat et. Integer in nisl ut elit gravida maximus. Fusce nec lacus a massa cursus elementum quis commodo enim. Aliquam tincidunt, velit ut sollicitudin laoreet, felis odio accumsan nisi, nec placerat nulla est quis lorem. Suspendisse sed sapien sit amet tellus viverra porttitor. Nam nunc massa, tempus et velit a, volutpat semper ipsum."
+                    TextColor="Black" />
+                <Label
+                    Margin="2"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="Aliquam condimentum dolor sed condimentum finibus. In nec tincidunt magna. Proin suscipit mi non orci facilisis efficitur. Proin vel bibendum urna, in sagittis turpis. Aliquam in tellus nec augue tempor viverra non eu nibh. Quisque porttitor dolor tortor, quis condimentum elit malesuada et. Nulla facilisi. Aliquam erat volutpat. Nulla facilisi. Maecenas imperdiet euismod dapibus. Maecenas pharetra lectus eget feugiat aliquet."
+                    TextColor="Black" />
+                <Label
+                    Margin="2"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="Vestibulum maximus orci ac ligula sagittis fermentum. Phasellus felis dui, porta ac sapien nec, cursus egestas ante. Nam vehicula sed odio id dapibus. Suspendisse ultrices mauris ut ipsum mollis, at porta orci fermentum. Aenean varius pretium ex eu commodo. Aenean luctus orci dui, et faucibus nulla commodo sodales. Nunc ornare, turpis quis elementum maximus, libero sem semper arcu, nec vulputate nunc massa a ante. Curabitur eu iaculis metus. Aliquam venenatis iaculis quam. Aliquam ac nibh cursus, aliquam dui id, convallis leo. Fusce est erat, convallis eget molestie eu, accumsan nec felis."
+                    TextColor="Black" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Картинки" BackgroundColor="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Image
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="12"
+                Source="home.png" />
+            <Image
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="12"
+                Source="home.png" />
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Контакты" BackgroundColor="White">
+        <StackLayout>
+            <Label
+                Margin="60,40,60,0"
+                Text="Телефон"
+                TextColor="Black" />
+            <Frame
+                Margin="60,0"
+                BackgroundColor="LightGray"
+                BorderColor="Black">
+                <Entry
+                    Margin="-10,-19,-10,-19"
+                    BackgroundColor="LightGray"
+                    PlaceholderColor="Gray"
+                    TextColor="Black" />
+            </Frame>
+            <Label
+                Margin="60,40,60,0"
+                Text="Телефон"
+                TextColor="Black" />
+            <Frame
+                Margin="60,0"
+                BackgroundColor="LightGray"
+                BorderColor="Black">
+                <Entry
+                    Margin="-10,-19,-10,-19"
+                    BackgroundColor="LightGray"
+                    PlaceholderColor="Gray"
+                    TextColor="Black" />
+            </Frame>
+            <Label
+                Margin="60,40,60,0"
+                Text="E-mail"
+                TextColor="Black" />
+            <Frame
+                Margin="60,0"
+                BackgroundColor="LightGray"
+                BorderColor="Black">
+                <Entry
+                    Margin="-10,-19,-10,-19"
+                    BackgroundColor="LightGray"
+                    PlaceholderColor="Gray"
+                    TextColor="Black" />
+            </Frame>
+            <Label
+                Margin="60,40,60,0"
+                Text="Адрес"
+                TextColor="Black" />
+            <Frame
+                Margin="60,0"
+                BackgroundColor="LightGray"
+                BorderColor="Black">
+                <Entry
+                    Margin="-10,-19,-10,-19"
+                    BackgroundColor="LightGray"
+                    PlaceholderColor="Gray"
+                    TextColor="Black" />
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

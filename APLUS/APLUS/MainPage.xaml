@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APLUS.MainPage"
+             BackgroundColor="White">
+    <StackLayout>
+        <Image Source="image.png" Grid.Column="1" Grid.Row="1" Margin="61"/>
+        <Label Text="Логин" TextColor="Black" Margin="60, 10, 60, 0"></Label>
+        <Frame Margin="60, 0" BorderColor="Black">
+            <Entry TextColor="Black" BackgroundColor="White" Margin="-10,-19,-10,-19"/>
+        </Frame>
+        <Label Text="Пароль" TextColor="Black" Margin="60, 40, 60, 0"></Label>
+        <Frame Margin="60, 0" BorderColor="Black">
+            <Entry TextColor="Black" BackgroundColor="White" Margin="-10,-19,-10,-19"/>
+        </Frame>
+        <Grid>
+            <Button Text="Зарегистрироваться" FontSize="10" Clicked="Button_Clicked" Margin="55, 20, 160, 0"/>
+            <Button x:Name="enter" Text="Вход" Clicked="enter_Clicked" FontSize="10" Margin="200, 20, 55, 0"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
