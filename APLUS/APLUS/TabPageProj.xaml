@@ -114,6 +114,7 @@
                 <Entry
                     Margin="-10,-19,-10,-19"
                     BackgroundColor="LightGray"
+                    IsEnabled="False"
                     PlaceholderColor="Gray"
                     TextColor="Black" />
             </Frame>
@@ -128,6 +129,7 @@
                 <Entry
                     Margin="-10,-19,-10,-19"
                     BackgroundColor="LightGray"
+                    IsEnabled="False"
                     PlaceholderColor="Gray"
                     TextColor="Black" />
             </Frame>
@@ -142,6 +144,7 @@
                 <Entry
                     Margin="-10,-19,-10,-19"
                     BackgroundColor="LightGray"
+                    IsEnabled="False"
                     PlaceholderColor="Gray"
                     TextColor="Black" />
             </Frame>
@@ -156,6 +159,7 @@
                 <Entry
                     Margin="-10,-19,-10,-19"
                     BackgroundColor="LightGray"
+                    IsEnabled="False"
                     PlaceholderColor="Gray"
                     TextColor="Black" />
             </Frame>
