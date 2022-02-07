@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace APLUS
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabPageProj : TabbedPage
+    public partial class AddPage : ContentPage
     {
-        public static string NameTit;
-        public TabPageProj(string titl)
+        public AddPage()
         {
-            NameTit = titl;
             InitializeComponent();
-        }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new EditPage());
         }
     }
 }

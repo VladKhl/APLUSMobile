@@ -2,7 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="APLUS.Projects"
-             Title="Проекты" BackgroundColor="White">
+             BackgroundColor="White" Visual="Material">
+    <NavigationPage.TitleView>
+        <StackLayout Margin="0,0,5,0" Orientation="Horizontal">
+            <Label
+                FontSize="20"
+                HorizontalOptions="CenterAndExpand"
+                Text="Проекты"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" />
+            <Label
+                FontFamily="MaterialIconsFont"
+                FontSize="40"
+                HorizontalOptions="End"
+                Text="&#xe145;"
+                TextColor="White">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="projectList" ItemTapped="projectList_ItemTapped">

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APLUS.EditPage" BackgroundColor="White" Visual="Material">
+    <NavigationPage.TitleView>
+        <StackLayout Margin="0,0,15,0" Orientation="Horizontal">
+            <Label
+                FontSize="20"
+                HorizontalOptions="CenterAndExpand"
+                Text="Изменить проект"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" />
+            <Label
+                FontFamily="MaterialIconsFont"
+                FontSize="Title"
+                HorizontalOptions="End"
+                Text="&#xe872;"
+                TextColor="White">
+            </Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Имя проекта" FontSize="15"/>
+            <Editor TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Описание" FontSize="15"/>
+            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
+            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
+            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
+            <Grid>
+                <Button Text="Отмена" FontSize="11" Margin="28, 140, 185, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
+                <Button x:Name="enter" Text="Изменить"  FontSize="11" Margin="185, 140, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

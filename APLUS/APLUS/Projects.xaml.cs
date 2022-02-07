@@ -17,6 +17,7 @@ namespace APLUS
         public Projects()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
             GetProjects();
             projectList.ItemsSource = projects;
         }
@@ -31,6 +32,11 @@ namespace APLUS
             projects = new List<Project>();
             for (int i = 1; i <= 18; i++)
                 projects.Add(new Project($"Проект {i}"));
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddPage());
         }
     }
 }
