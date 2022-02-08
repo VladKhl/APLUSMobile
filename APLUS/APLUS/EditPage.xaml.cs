@@ -12,9 +12,21 @@ namespace APLUS
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditPage : ContentPage
     {
-        public EditPage()
+        public static string NameTit;
+        public EditPage(string tit)
         {
+            NameTit = tit;
             InitializeComponent();
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            DisplayAlert("", $"Вы точно хотите удалить {NameTit}?", "Удалить", "Отмена");
+        }
+
+        private void enter_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("", $"Вы точно хотите изменить {NameTit}?", "Изменить", "Отмена");
         }
     }
 }

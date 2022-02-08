@@ -8,9 +8,10 @@
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Имя проекта" FontSize="15"/>
-            <Editor TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Описание" FontSize="15"/>
+            <Editor TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Описание" FontSize="15" AutoSize="TextChanges"/>
             <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
             <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
             <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
@@ -19,5 +20,6 @@
                 <Button x:Name="enter" Text="Добавить"  FontSize="11" Margin="185, 140, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
             </Grid>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
