@@ -39,7 +39,7 @@ namespace APLUS
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new EditPage(NameTit));
+            Navigation.PushAsync(new EditPage(project));
         }
     }
 }

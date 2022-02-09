@@ -97,9 +97,9 @@
     </ContentPage>
     <ContentPage Title="Контакты" BackgroundColor="White">
         <StackLayout>
-            <Entry x:Name="phone" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 30" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
-            <Entry x:Name="email" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
-            <Entry x:Name="adres" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 30" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
+            <Entry x:Name="phone" TextColor="Black" IsEnabled="False" BackgroundColor="#E8E8E8" Margin="40, 30" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
+            <Entry x:Name="email" TextColor="Black" IsEnabled="False" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
+            <Entry x:Name="adres" TextColor="Black" IsEnabled="False" BackgroundColor="#E8E8E8" Margin="40, 30" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
         </StackLayout>
     </ContentPage>
 </TabbedPage>
