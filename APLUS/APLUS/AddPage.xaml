@@ -10,14 +10,14 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Имя проекта" FontSize="15"/>
-            <Editor TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Описание" FontSize="15" AutoSize="TextChanges"/>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
+            <Entry x:Name="name" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Имя проекта" FontSize="15"/>
+            <Editor x:Name="descr" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Описание" FontSize="15" AutoSize="TextChanges"/>
+            <Entry x:Name="phone" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
+                <Entry x:Name="email" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
+                <Entry x:Name="adres" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
             <Grid>
-                <Button Text="Отмена" FontSize="11" Margin="28, 140, 185, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
-                <Button x:Name="enter" Text="Добавить"  FontSize="11" Margin="185, 140, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
+                <Button Text="Отмена" FontSize="11" Margin="28, 140, 185, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="Button_Clicked"/>
+                <Button x:Name="enter" Text="Добавить"  FontSize="11" Margin="185, 140, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="enter_Clicked"/>
             </Grid>
         </StackLayout>
         </ScrollView>

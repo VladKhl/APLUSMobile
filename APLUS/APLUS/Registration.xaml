@@ -9,11 +9,11 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 40" PlaceholderColor="Black" Placeholder="Логин" FontSize="15"/>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 40" PlaceholderColor="Black" Placeholder="Пароль" FontSize="15"/>
-            <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Пароль" FontSize="15"/>
-            <Button Text="Зарегистрироваться" FontSize="9" Margin="40, 150, 40, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
+            <Entry x:Name="login" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 40" PlaceholderColor="Black" Placeholder="Логин" FontSize="15"/>
+            <Entry x:Name="mail" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
+            <Entry x:Name="pass1" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 40" PlaceholderColor="Black" Placeholder="Пароль" FontSize="15"/>
+            <Entry x:Name="pass2" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Пароль" FontSize="15"/>
+            <Button Text="Зарегистрироваться" FontSize="9" Margin="40, 150, 40, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

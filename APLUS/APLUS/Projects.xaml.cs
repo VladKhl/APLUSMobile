@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APLUS.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,26 +13,28 @@ namespace APLUS
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Projects : ContentPage
     {
-
-        static List<Project> projects;
         public Projects()
         {
             InitializeComponent();
+            UpdateList();
             NavigationPage.SetHasBackButton(this, false);
-            GetProjects();
-            projectList.ItemsSource = projects;
         }
 
         private void projectList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            Navigation.PushAsync(new TabPageProj(projects[e.ItemIndex].Name));
+            Navigation.PushAsync(new TabPageProj((ProjectModel)e.Item));
         }
 
-        public static void GetProjects()
+        protected override void OnAppearing()
         {
-            projects = new List<Project>();
-            for (int i = 1; i <= 18; i++)
-                projects.Add(new Project($"Проект {i}"));
+            UpdateList();
+            base.OnAppearing();
+        }
+
+        public void UpdateList()
+        {
+            projectList.ItemsSource = null;
+            projectList.ItemsSource = App.Db.GetProjects();
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

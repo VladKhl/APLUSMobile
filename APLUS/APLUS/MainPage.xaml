@@ -5,8 +5,8 @@
              BackgroundColor="White" Visual="Material">
     <StackLayout>
         <Image Source="image.png" Grid.Column="1" Grid.Row="1" Margin="61"/>
-        <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="35,20" PlaceholderColor="Black" Placeholder="Логин" FontSize="15"/>
-        <Entry TextColor="Black" BackgroundColor="#E8E8E8" Margin="35,15" PlaceholderColor="Black" Placeholder="Пароль" FontSize="15"/>
+        <Entry x:Name="login" TextColor="Black" BackgroundColor="#E8E8E8" Margin="35,20" PlaceholderColor="Black" Placeholder="Логин" FontSize="15"/>
+        <Entry x:Name="pass" TextColor="Black" BackgroundColor="#E8E8E8" Margin="35,15" PlaceholderColor="Black" Placeholder="Пароль" FontSize="15"/>
         <Grid>
             <Button Text="Зарегистрироваться" FontSize="9" Clicked="Button_Clicked" Margin="28, 65, 185, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>
             <Button x:Name="enter" Text="Войти" Clicked="enter_Clicked" FontSize="9" Margin="185, 65, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200"/>

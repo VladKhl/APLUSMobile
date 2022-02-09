@@ -24,7 +24,23 @@ namespace APLUS
 
         private void enter_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Projects());
+            var lst = App.Db.GetClients();
+            bool state = false;
+
+            foreach (var item in lst)
+            {
+                if (item.Login == login.Text)
+                {
+                    if (item.Password == pass.Text)
+                    {
+                        state = true;
+                        Navigation.PushAsync(new Projects());
+                    }
+                }
+            }
+
+            if (!state)
+                DisplayAlert("", "Неправильный логин или пароль", "Ok");
         }
     }
 }
