@@ -9,15 +9,22 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <Entry x:Name="name" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Имя проекта" FontSize="15"/>
+            <StackLayout>
+                <Entry x:Name="name" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Имя проекта" FontSize="15"/>
             <Editor x:Name="descr" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="Описание" FontSize="15" AutoSize="TextChanges"/>
             <Entry x:Name="phone" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
                 <Entry x:Name="email" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
                 <Entry x:Name="adres" TextColor="Black" BackgroundColor="#E8E8E8" Margin="40, 20" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
-            <Grid>
-                <Button Text="Отмена" FontSize="11" Margin="28, 140, 185, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="Button_Clicked"/>
-                <Button x:Name="enter" Text="Добавить"  FontSize="11" Margin="185, 140, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="enter_Clicked"/>
+                <StackLayout Orientation="Horizontal">
+                <Image x:Name="img" Margin="40, 0, 0, 0" HeightRequest="150" WidthRequest="150"/>
+                    <StackLayout>
+                        <Button x:Name="add_cam" Text="Добавить фото(камера)" FontSize="9" BackgroundColor="#00B2FF" Margin="20, 20" CornerRadius="200" Clicked="TakePhotoAsync"/>
+                        <Button x:Name="add_gal" Text="Добавить фото(галерея)"  FontSize="9" Margin="20, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="GetPhotoAsync"/>
+                </StackLayout>
+                </StackLayout>
+                <Grid>
+                <Button Text="Отмена" FontSize="11" Margin="28, 40, 185, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="Button_Clicked"/>
+                <Button x:Name="enter" Text="Добавить"  FontSize="11" Margin="185, 40, 28, 0" BackgroundColor="#00B2FF" CornerRadius="200" Clicked="enter_Clicked"/>
             </Grid>
         </StackLayout>
         </ScrollView>

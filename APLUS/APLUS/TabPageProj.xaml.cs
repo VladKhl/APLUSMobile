@@ -35,6 +35,7 @@ namespace APLUS
             adres.Text = project.Address;
             email.Text = project.Email;
             phone.Text = project.TelephoneNumber;
+            img.Source = project.Image;
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

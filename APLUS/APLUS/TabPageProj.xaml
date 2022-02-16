@@ -42,58 +42,9 @@
         </ScrollView>
     </ContentPage>
     <ContentPage Title="Картинки" BackgroundColor="White">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Image
-                Grid.Row="0"
-                Grid.Column="0"
-                Margin="12"
+                <Image x:Name="img"
+                Margin="61"
                 Source="home.png" />
-            <Image
-                Grid.Row="0"
-                Grid.Column="1"
-                Margin="12"
-                Source="home.png" />
-            <Image
-                Grid.Row="1"
-                Grid.Column="0"
-                Margin="12"
-                Source="home.png" />
-            <Image
-                Grid.Row="1"
-                Grid.Column="1"
-                Margin="12"
-                Source="home.png" />
-            <Image
-                Grid.Row="2"
-                Grid.Column="0"
-                Margin="12"
-                Source="home.png" />
-            <Image
-                Grid.Row="2"
-                Grid.Column="1"
-                Margin="12"
-                Source="home.png" />
-            <Image
-                Grid.Row="3"
-                Grid.Column="0"
-                Margin="12"
-                Source="home.png" />
-            <Image
-                Grid.Row="3"
-                Grid.Column="1"
-                Margin="12"
-                Source="home.png" />
-        </Grid>
     </ContentPage>
     <ContentPage Title="Контакты" BackgroundColor="White">
         <StackLayout>

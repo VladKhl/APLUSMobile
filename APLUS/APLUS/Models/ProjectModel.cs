@@ -8,13 +8,14 @@ namespace APLUS.Models
     [Table("Project1")]
     public class ProjectModel
     {
-        public ProjectModel(string name, string description, string telephoneNumber, string email, string address)
+        public ProjectModel(string name, string description, string telephoneNumber, string email, string address, string image)
         {
             Name = name;
             Description = description;
             TelephoneNumber = telephoneNumber;
             Email = email;
             Address = address;
+            Image = image;
         }
 
         public ProjectModel()
@@ -30,5 +31,6 @@ namespace APLUS.Models
         public string TelephoneNumber { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
+        public string Image { get; set; }
     }
 }
