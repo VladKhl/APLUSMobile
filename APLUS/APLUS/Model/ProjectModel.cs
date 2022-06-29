@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace APLUS.Models
+namespace APLUS.Model
 {
     [Table("Project1")]
     public class ProjectModel

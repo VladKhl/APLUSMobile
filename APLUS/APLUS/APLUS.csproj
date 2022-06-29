@@ -26,19 +26,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AddPage.xaml">
+    <EmbeddedResource Update="View\AddPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="EditPage.xaml">
+    <EmbeddedResource Update="View\EditPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Projects.xaml">
+    <EmbeddedResource Update="View\Projects.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Registration.xaml">
+    <EmbeddedResource Update="View\Registration.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TabPageProj.xaml">
+    <EmbeddedResource Update="View\TabPageProj.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

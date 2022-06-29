@@ -3,7 +3,8 @@
     x:Class="APLUS.TabPageProj"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:APLUS"  Visual="Material">
+    xmlns:local="clr-namespace:APLUS"
+    Visual="Material">
     <NavigationPage.TitleView>
         <StackLayout Margin="0,0,30,0" Orientation="Horizontal">
             <Label
@@ -33,24 +34,50 @@
                     HorizontalTextAlignment="Center"
                     Text="ОПИСАНИЕ:"
                     TextColor="Black" />
-                <Label x:Name="descrip"
+                <Label
+                    x:Name="descrip"
                     Margin="2"
                     FontAttributes="Bold"
-                    HorizontalTextAlignment="Center" 
+                    HorizontalTextAlignment="Center"
                     TextColor="Black" />
             </StackLayout>
         </ScrollView>
     </ContentPage>
     <ContentPage Title="Картинки" BackgroundColor="White">
-                <Image x:Name="img"
-                Margin="61"
-                Source="home.png" />
+        <Image
+            x:Name="img"
+            Margin="61"
+            Source="home.png" />
     </ContentPage>
     <ContentPage Title="Контакты" BackgroundColor="White">
         <StackLayout>
-            <Entry x:Name="phone" TextColor="Black" IsEnabled="False" BackgroundColor="#E8E8E8" Margin="40, 30" PlaceholderColor="Black" Placeholder="Телефон №1" FontSize="15"/>
-            <Entry x:Name="email" TextColor="Black" IsEnabled="False" BackgroundColor="#E8E8E8" Margin="40, 0" PlaceholderColor="Black" Placeholder="E-mail" FontSize="15"/>
-            <Entry x:Name="adres" TextColor="Black" IsEnabled="False" BackgroundColor="#E8E8E8" Margin="40, 30" PlaceholderColor="Black" Placeholder="Адрес" FontSize="15"/>
+            <Entry
+                x:Name="phone"
+                Margin="40,30"
+                BackgroundColor="#E8E8E8"
+                FontSize="15"
+                IsEnabled="False"
+                Placeholder="Телефон №1"
+                PlaceholderColor="Black"
+                TextColor="Black" />
+            <Entry
+                x:Name="email"
+                Margin="40,0"
+                BackgroundColor="#E8E8E8"
+                FontSize="15"
+                IsEnabled="False"
+                Placeholder="E-mail"
+                PlaceholderColor="Black"
+                TextColor="Black" />
+            <Entry
+                x:Name="adres"
+                Margin="40,30"
+                BackgroundColor="#E8E8E8"
+                FontSize="15"
+                IsEnabled="False"
+                Placeholder="Адрес"
+                PlaceholderColor="Black"
+                TextColor="Black" />
         </StackLayout>
     </ContentPage>
 </TabbedPage>

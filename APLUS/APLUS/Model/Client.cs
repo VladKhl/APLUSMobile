@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace APLUS.Models
+namespace APLUS.Model
 {
     [Table("Cleint")]
     public class Client
